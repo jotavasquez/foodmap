@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Food Map</title>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <!--splash intro-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div id="splash" style="display:none;">
+                    <h1>FOODMAP</h1>
+                </div>
+            </div>
+        </div>
+        <!--Foodmap home-->
+        <div class="row">
+            <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1">
+                <h1>FOODMAP</h1>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d106495.98545164752!2d-70.69007406440245!3d-33.47536261032646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssantiago+restaurant!5e0!3m2!1ses-419!2scl!4v1513107532636"
+                    width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <h2>Comida cerca de ti</h2>
+                <!--search bar with dropdown-->
+                <div class="input-group search">
+                    <div class="input-group-btn search-panel">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">Buscar por</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#chinese"  data-filter="hdpe" >Comida China</a>
+                            </li>
+                            <li>
+                                <a href="#mexican">Comida Mexicana</a>
+                            </li>
+                            <li>
+                                <a href="#italian">Comida Italiana</a>
+                            </li>
+                            <li>
+                                <a href="#japanese">Comida Japonesa</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#all">Todas</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Ingresa tu búsqueda...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--restaurants thumbnails-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div align="center">
+                        <button class="btn btn-default filter-button" data-filter="all">All</button>
+                        <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+                        <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+                        <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+                        <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="assets/img/chinese_1.jpg" class="img-responsive food">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="assets/img/chinese_2.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="assets/img/chinese_3.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/italian_1.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <img src="assets/img/italian_2.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/italian_3.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <img src="assets/img/japanese_1.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/japanese_2.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/mexican_1.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="assets/img/mexican_2.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <img src="assets/img/mexican_3.jpeg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="assets/img/japanese_4.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
