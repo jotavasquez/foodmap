@@ -11,7 +11,7 @@
     <title>Food Map</title>
 </head>
 <body>
-    <div class="container-fluid text-center">
+    <div class="container text-center">
         <!--splash intro-->
         <div class="row">
             <div class="col-xs-12 col-sm-12">
@@ -22,7 +22,7 @@
         </div>
         <!--Foodmap home-->
         <div class="row">
-            <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1">
+            <div class="col-xs-12 col-sm-12 margin">
                 <h1>FOODMAP</h1>
                 <hr>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d106495.98545164752!2d-70.69007406440245!3d-33.47536261032646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssantiago+restaurant!5e0!3m2!1ses-419!2scl!4v1513107532636"
@@ -37,15 +37,18 @@
                         </button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a href="#chinese"  data-filter="hdpe" >Comida China</a>
+                                <button class="btn btn-default filter-button" data-filter="hdpe">Chinese</button>
                             </li>
                             <li>
+                                <button class="btn btn-default filter-button" data-filter="sprinkle">Italiana</button>
                                 <a href="#mexican">Comida Mexicana</a>
                             </li>
                             <li>
+                                <button class="btn btn-default filter-button" data-filter="spray">Japanese</button>
                                 <a href="#italian">Comida Italiana</a>
                             </li>
                             <li>
+                                <button class="btn btn-default filter-button" data-filter="irrigation">Mexicana</button>
                                 <a href="#japanese">Comida Japonesa</a>
                             </li>
                             <li class="divider"></li>
@@ -64,57 +67,129 @@
                 </div>
             </div>
         </div>
-        <!--restaurants thumbnails-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div align="center">
-                        <button class="btn btn-default filter-button" data-filter="all">All</button>
-                        <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
-                        <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
-                        <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
-                        <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Restaurant</h3>
+                    </div>
+                    <div class="modal_img">
+                        <img src="assets/img/chinese_1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam qui vel. Quas veritatis sapiente rerum, id dolorum quidem, quasi at quia suscipit soluta consectetur quaerat rem dignissimos non quo.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Pedir Ahora</button>
                     </div>
                 </div>
             </div>
+        </div>
+        <!--restaurants thumbnails-->
+        <div class="container-fluid flex">
             <div class="row">
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <div id="thumb_01" class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
                     <img src="assets/img/chinese_1.jpg" class="img-responsive food">
+                        <div class="name">
+                            <h3>Name Restaurant</h3>
+                            <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                        </div>
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                    <img src="assets/img/chinese_2.jpg" class="img-responsive">
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="assets/img/chinese_2.jpg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="assets/img/chinese_3.jpg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/italian_1.jpg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <img src="assets/img/italian_2.jpg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/italian_3.jpg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <img src="assets/img/japanese_1.jpg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/japanese_2.jpg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/mexican_1.jpg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="assets/img/mexican_2.jpg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <img src="assets/img/mexican_3.jpeg" class="img-responsive"></div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="assets/img/japanese_4.jpg" class="img-responsive"></div>
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                    <img src="assets/img/chinese_3.jpg" class="img-responsive">
+
+            <!--
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <div id="thumb_01" class="text-center thumb filter hdpe">
+                        <div class="name">
+                            <h3>Name Restaurant</h3>
+                            <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="assets/img/italian_1.jpg" class="img-responsive">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <div id="thumb_02" class="text-center thumb">
+                        <div class="name">
+                            <h3>Name Restaurant</h3>
+                            <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                    <img src="assets/img/italian_2.jpg" class="img-responsive">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <div id="thumb_03" class="text-center thumb">
+                        <div class="name">
+                            <h3>Name Restaurant</h3>
+                            <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="assets/img/italian_3.jpg" class="img-responsive">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <div id="thumb_04" class="text-center thumb">
+                        <div class="name">
+                            <h3>Name Restaurant</h3>
+                            <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                    <img src="assets/img/japanese_1.jpg" class="img-responsive">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <div id="thumb_05" class="text-center thumb">
+                        <div class="name">
+                            <h3>Name Restaurant</h3>
+                            <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="assets/img/japanese_2.jpg" class="img-responsive">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <div id="thumb_06" class="text-center thumb">
+                        <div class="name">
+                            <h3>Name Restaurant</h3>
+                            <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="assets/img/mexican_1.jpg" class="img-responsive">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <div id="thumb_07" class="text-center thumb">
+                        <div class="name">
+                            <h3>Name Restaurant</h3>
+                            <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                    <img src="assets/img/mexican_2.jpg" class="img-responsive">
-                </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                    <img src="assets/img/mexican_3.jpeg" class="img-responsive">
-                </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                    <img src="assets/img/japanese_4.jpg" class="img-responsive">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <div id="thumb_08" class="text-center thumb"> 
+                        <div class="name">
+                            <h3>Name Restaurant</h3>
+                            <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        -->
         </div>
     </div>
     <!-- Latest compiled and minified JavaScript -->

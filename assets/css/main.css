@@ -2,6 +2,9 @@ body{
     background-color: #2F2F2F;
     color: orange;
 }
+.margin{
+    padding: 0 30px;
+}
 
 #splash {
     display: flex;
@@ -20,64 +23,80 @@ hr {
 }
 
 /*gallery*/
-
-.gallery-title {
-    font-size: 36px;
-    color: #42B32F;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 70px;
-}
-
-.gallery-title:after {
-    content: "";
-    position: absolute;
-    width: 7.5%;
-    left: 46.5%;
-    height: 45px;
-    border-bottom: 1px solid #5e5e5e;
-}
-
-.filter-button {
-    font-size: 1em;
-    font-weight: bold;
-    border: 1px solid #00000000;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 1em;
-    padding: 0.2em 0.5em;
-    background-color:rgb(255, 136, 0);
-}
-
-.filter-button:hover {
-    font-size: 1em;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #42B32F;
-}
-
-.btn-default:active .filter-button:active {
-    background-color: #42B32F;
-    color: white;
-}
-
-.port-image {
-    width: 100%;
-}
-
-.gallery_product{
+.thumb {
     margin-bottom: 5%;
+    height: 20vh;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.gallery_product img{
+.thumb img {
     border-radius: 5px;
     width: 100%;
     height: 20vh;
     object-fit: cover;
+    z-index: 0;
 }
 
+.btn-thumb{
+    width: 25%;
+    background-color: orange;
+    border:none;
+}
+
+.name{
+    background-color: #000;
+    color: #FFF;
+    z-index: 1;
+    opacity: 0.5;
+    display:none;
+    width: 100%;
+    height: 90%;
+    margin:0;
+    padding: 0;
+}
+
+.flex {
+    display: inline-flex;
+}
+
+#thumb_01 {
+    background-image: url(../img/chinese_1.jpg);
+}
+
+#thumb_02 {
+    /*background-image: url(../img/chinese_2.jpg);*/
+}
+
+#thumb_03 {
+    /*background-image: url(../img/italian_1.jpg);*/
+}
+
+#thumb_04 {
+    /*background-image: url(../img/italian_2.jpg);*/
+}
+
+#thumb_05 {
+    /*background-image: url(../img/japanese_1.jpg);*/
+}
+
+#thumb_06 {
+    /*background-image: url(../img/japanese_2.jpg);*/
+}
+
+#thumb_07 {
+    /*background-image: url(../img/mexican_1.jpg);*/
+}
+
+#thumb_08 {
+    /*background-image: url(../img/mexican_2.jpg);*/
+}
+
+.modal_img {
+    width: 100%;
+}
 
 
