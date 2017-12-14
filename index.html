@@ -37,23 +37,20 @@
                         </button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <button class="btn btn-default filter-button" data-filter="hdpe">Chinese</button>
+                                <a type="button" class="btn btn-default filter-button" data-filter="hdpe" href="#">Comida China</a>
                             </li>
                             <li>
-                                <button class="btn btn-default filter-button" data-filter="sprinkle">Italiana</button>
-                                <a href="#mexican">Comida Mexicana</a>
+                                <a type="button" class="btn btn-default filter-button" data-filter="sprinkle" href="#">Italiana</a>
                             </li>
                             <li>
-                                <button class="btn btn-default filter-button" data-filter="spray">Japanese</button>
-                                <a href="#italian">Comida Italiana</a>
+                                <a type="button" class="btn btn-default filter-button" data-filter="spray" href="#">japanese</a>
                             </li>
                             <li>
-                                <button class="btn btn-default filter-button" data-filter="irrigation">Mexicana</button>
-                                <a href="#japanese">Comida Japonesa</a>
+                                <a type="button" class="btn btn-default filter-button" data-filter="irrigation" href="#">Mexicana</a>
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="#all">Todas</a>
+                                <a type="button" class="btn btn-default filter-button" data-filter="filter" href="#">Todas</a>
                             </li>
                         </ul>
                     </div>
@@ -91,41 +88,96 @@
         <!--restaurants thumbnails-->
         <div class="container-fluid flex">
             <div class="row">
-                <div id="thumb_01" class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                    <img src="assets/img/chinese_1.jpg" class="img-responsive food">
-                        <div class="name">
-                            <h3>Name Restaurant</h3>
-                            <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
-                        </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="assets/img/chinese_1.jpg" class="img-responsive thumb food">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
                 </div>
                 <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                    <img src="assets/img/chinese_2.jpg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                    <img src="assets/img/chinese_3.jpg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="assets/img/italian_1.jpg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                    <img src="assets/img/italian_2.jpg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="assets/img/italian_3.jpg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                    <img src="assets/img/japanese_1.jpg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="assets/img/japanese_2.jpg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="assets/img/mexican_1.jpg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                    <img src="assets/img/mexican_2.jpg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                    <img src="assets/img/mexican_3.jpeg" class="img-responsive"></div>
-                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                    <img src="assets/img/japanese_4.jpg" class="img-responsive"></div>
+                    <img src="assets/img/chinese_2.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
                 </div>
-
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="assets/img/chinese_3.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/italian_1.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <img src="assets/img/italian_2.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/italian_3.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <img src="assets/img/japanese_1.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/japanese_2.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                    <img src="assets/img/mexican_1.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="assets/img/mexican_2.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                    <img src="assets/img/mexican_3.jpeg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+                <div class="thumb col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="assets/img/japanese_4.jpg" class="img-responsive thumb">
+                    <div class="name">
+                        <h3>Name Restaurant</h3>
+                        <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
+                    </div>
+                </div>
+            </div>
             <!--
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <div id="thumb_01" class="text-center thumb filter hdpe">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 filter sprinkle">
+                    <div class="text-center thumb filter hdpe">
+                        <img src="assets/img/chinese_1.jpg" class="img-responsive food">
                         <div class="name">
                             <h3>Name Restaurant</h3>
                             <a type="submit" class="btn btn-default text-center btn-thumb" data-toggle="modal" data-target="#myModal">Info</a>
@@ -133,7 +185,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                    <div id="thumb_02" class="text-center thumb">
+                    <div class="text-center thumb">
                         <div class="name">
                             <h3>Name Restaurant</h3>
                             <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
@@ -141,7 +193,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                    <div id="thumb_03" class="text-center thumb">
+                    <div class="text-center thumb">
                         <div class="name">
                             <h3>Name Restaurant</h3>
                             <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
@@ -149,7 +201,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                    <div id="thumb_04" class="text-center thumb">
+                    <div class="text-center thumb">
                         <div class="name">
                             <h3>Name Restaurant</h3>
                             <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
@@ -157,7 +209,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                    <div id="thumb_05" class="text-center thumb">
+                    <div class="text-center thumb">
                         <div class="name">
                             <h3>Name Restaurant</h3>
                             <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
@@ -165,7 +217,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                    <div id="thumb_06" class="text-center thumb">
+                    <div class="text-center thumb">
                         <div class="name">
                             <h3>Name Restaurant</h3>
                             <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
@@ -173,7 +225,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                    <div id="thumb_07" class="text-center thumb">
+                    <div class="text-center thumb">
                         <div class="name">
                             <h3>Name Restaurant</h3>
                             <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
@@ -181,15 +233,14 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <div id="thumb_08" class="text-center thumb"> 
+                    <div class="text-center thumb"> 
                         <div class="name">
                             <h3>Name Restaurant</h3>
                             <a type="submit" class="btn btn-default text-center btn-thumb">Info</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        -->
+            </div> -->
         </div>
     </div>
     <!-- Latest compiled and minified JavaScript -->

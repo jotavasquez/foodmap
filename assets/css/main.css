@@ -1,8 +1,9 @@
-body{
+body {
     background-color: #2F2F2F;
     color: orange;
 }
-.margin{
+
+.margin {
     padding: 0 30px;
 }
 
@@ -11,18 +12,19 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 5em;
-    height:100vh;
+    height: 100vh;
 }
 
 hr {
-    color:white;
+    color: white;
 }
 
-.search{
+.search {
     margin-bottom: 2em;
 }
 
 /*gallery*/
+
 .thumb {
     margin-bottom: 5%;
     height: 20vh;
@@ -31,6 +33,8 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    border-radius: 1em;
 }
 
 .thumb img {
@@ -41,62 +45,76 @@ hr {
     z-index: 0;
 }
 
-.btn-thumb{
+.btn-thumb {
     width: 25%;
     background-color: orange;
-    border:none;
+    border: none;
+    z-index: 1;
 }
 
-.name{
+.name {
     background-color: #000;
     color: #FFF;
     z-index: 1;
     opacity: 0.5;
-    display:none;
     width: 100%;
     height: 90%;
-    margin:0;
-    padding: 0;
+    border-radius: 1em;
+    display: none;
+    position: relative;
+}
+
+.dropdown-menu a {
+    border: none;
+    text-align: left;
 }
 
 .flex {
     display: inline-flex;
 }
 
+/*
 #thumb_01 {
     background-image: url(../img/chinese_1.jpg);
+    height: 20vh;
 }
 
 #thumb_02 {
-    /*background-image: url(../img/chinese_2.jpg);*/
+    background-image: url(../img/chinese_2.jpg);
+    height: 20vh;
 }
 
 #thumb_03 {
-    /*background-image: url(../img/italian_1.jpg);*/
+    background-image: url(../img/italian_1.jpg);
+    height: 20vh;
 }
 
 #thumb_04 {
-    /*background-image: url(../img/italian_2.jpg);*/
+    background-image: url(../img/italian_2.jpg);
+    height: 20vh;
 }
 
 #thumb_05 {
-    /*background-image: url(../img/japanese_1.jpg);*/
+    background-image: url(../img/japanese_1.jpg);
+    height: 20vh;
 }
 
 #thumb_06 {
-    /*background-image: url(../img/japanese_2.jpg);*/
+    background-image: url(../img/japanese_2.jpg);
+    height: 20vh;
 }
 
 #thumb_07 {
-    /*background-image: url(../img/mexican_1.jpg);*/
+    background-image: url(../img/mexican_1.jpg);
+    height: 20vh;
 }
 
 #thumb_08 {
-    /*background-image: url(../img/mexican_2.jpg);*/
+    background-image: url(../img/mexican_2.jpg);
+    height: 20vh;
 }
+*/
 
 .modal_img {
     width: 100%;
 }
-
-

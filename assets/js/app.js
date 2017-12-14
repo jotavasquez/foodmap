@@ -48,14 +48,12 @@ $(document).ready(function () {
         $(this).fadeTo(100, 1);
     });
 */
-
         $(photo).mouseover(function () {
             $(this).children(".name").show();
         });
         $(photo).mouseout(function () {
             $(this).children(".name").hide();
         });
-
 
         $(".filter-button").click(function () {
             var value = $(this).attr('data-filter');
@@ -69,7 +67,6 @@ $(document).ready(function () {
                 //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
                 $(".filter").not('.' + value).hide('3000');
                 $('.filter').filter('.' + value).show('3000');
-
             }
         });
 
@@ -77,5 +74,7 @@ $(document).ready(function () {
             $(this).removeClass("active");
         }
         $(this).addClass("active");
+
+        
 
 });
